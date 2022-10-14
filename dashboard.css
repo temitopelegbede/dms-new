@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Raleway:wght@100;200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whole {
+    /* height:auto; */
+    /* height: 100vh; */
+}
+
+/* HEADER TOP CSS BEGIN */
+.top {
+    /* display: flex; */
+    background: whitesmoke;
+}
+
+header {
+    display: flex;
+    /* flex: 30px; */
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+/* .hdleft {
+    flex: 60%;
+    border: 2px solid blue;
+} */
+
+.logo-text {
+    text-transform: uppercase;
+    margin-left: 0.8rem;
+    font-size: 24px;
+    color: #030026;
+    font-weight: 700;
+}
+
+/* .hdright {
+    flex: 40%;
+    border: 2px solid white;
+    position: relative;
+} */
+
+.fa-search {
+    position: absolute;
+    top: 19px;
+    right: 300px;
+    font-size: 10px;
+    color: blue;
+}
+
+.search {
+    position: absolute;
+    top: 19px;
+    right: 150px;
+    font-size: 11px;
+    border: 2px solid blue;
+    height: 1.2rem;
+}
+
+.fa-user-circle {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    font-size: 40px;
+}
+
+.adm-name {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.role {
+    position: absolute;
+    right: 65px;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+/* HEADER TOP CSS END*/
+
+/* SIDE BAR CSS BEGIN*/
+.side {
+    flex: 10%;
+    border: 1px solid blue;
+    position: relative;
+    background: whitesmoke;
+    flex-wrap: initial;
+    height: 80vh;
+}
+
+#icn {
+    position: absolute;
+    padding-left: 1.5rem;
+    cursor: pointer;
+
+    font-size: 1.2rem;
+    font-weight: 400px;
+}
+
+i:hover {
+    padding-left: 2rem;
+    border-radius: 10px;
+    width: 150px;
+    height: 2rem;
+    background-color: blue;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* vertical-align: middle; */
+}
+
+.fa-th-list {
+    top: 1rem;
+}
+
+.fa-building {
+    top: 5rem;
+}
+
+.fa-list {
+    top: 9rem;
+}
+
+.fa-bookmark {
+    top: 13rem;
+}
+
+.fa-clone {
+    top: 17rem;
+}
+
+.fa-signal {
+    top: 21rem;
+}
+
+.fa-book {
+    top: 25rem;
+}
+
+.fa-cogs {
+    top: 29rem;
+}
+
+.fa-cog {
+    top: 33rem;
+}
+
+/* SIDE BAR CSS END*/
+
+/* DOWN MAIN PAGE CSS BEGIN*/
+.down {
+    display: flex;
+    height: auto;
+}
+
+.main {
+    flex: 70%;
+    background: blue;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left {
+    flex: 25%;
+    border: 1px solid red;
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+.left>img {
+    font-size: 2rem;
+}
+
+.right {
+    flex: 75%;
+    border: 1px solid brown;
+    text-align: center;
+    /* flex-direction: row; */
+}
+
+.top-right {
+    flex: 50%;
+    border: 1px solid brown;
+    flex-direction: row;
+}
+
+.down-right {
+    flex: 50%;
+    border: 1px solid brown;
+    flex-direction: row;
+}
+
+/* DOWN MAIN PAGE CSS END */
+
+/* MEDIA QUERY CSS BEGIN */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .side {
+        display: none;
+    }
+
+    .fa-search {
+        top: 2.7rem;
+        right: 10rem;
+    }
+
+    .search {
+        top: 2.7rem;
+        right: 0.6rem;
+    }
+
+    .fa-user-circle {
+        top: .5rem;
+    }
+
+    .adm-name {
+        top: .5rem;
+    }
+
+    .role {
+        top: 1.5rem;
+    }
+
+
+}
+
+/* MEDIA QUERY CSS END */
