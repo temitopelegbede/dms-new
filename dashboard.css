@@ -171,7 +171,7 @@ i:hover {
 
 .main {
     flex: 70%;
-    background: blue;
+    /* background: blue; */
 }
 
 .main-container {
