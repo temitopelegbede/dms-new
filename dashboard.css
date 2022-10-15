@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: whitesmoke;
 }
 
-.whole {
-    /* height:auto; */
-    /* height: 100vh; */
-}
+/* .whole {
+    height:auto;
+    height: 100vh;
+    background: whitesmoke;
+} */
 
 /* HEADER TOP CSS BEGIN */
 .top {
@@ -97,12 +99,12 @@ header {
 
 /* SIDE BAR CSS BEGIN*/
 .side {
-    flex: 10%;
+    flex: 20%;
     border: 1px solid blue;
     position: relative;
     background: whitesmoke;
-    flex-wrap: initial;
-    height: 80vh;
+    /* flex-wrap: initial; */
+    /* height: 80vh; */
 }
 
 #icn {
@@ -117,7 +119,7 @@ header {
 i:hover {
     padding-left: 2rem;
     border-radius: 10px;
-    width: 150px;
+    width: 200px;
     height: 2rem;
     background-color: blue;
     /* align-content: center; */
