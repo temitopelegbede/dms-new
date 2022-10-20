@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: whitesmoke;
+    /* background: whitesmoke; */
 }
 
 /* .whole {
@@ -14,51 +14,47 @@
 } */
 
 /* HEADER TOP CSS BEGIN */
-.top {
-    /* display: flex; */
-    background: whitesmoke;
-}
-
 header {
     display: flex;
-    /* flex: 30px; */
     padding: 15px;
-    align-items: center;
-    cursor: pointer;
-    /* position: relative; */
+    /* background-color: green; */
 }
 
-/* .hdleft {
-    flex: 60%;
-    border: 2px solid blue;
-} */
+.hdrleft {
+    flex: 70%;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    cursor: pointer;
+    /* background-color: red;   */
+}
 
 .logo-text {
     text-transform: uppercase;
-    margin-left: 0.8rem;
+    margin-left: 0.3rem;
+    padding: 0;
     font-size: 24px;
     color: #030026;
     font-weight: 700;
 }
 
-/* .hdright {
-    flex: 40%;
-    border: 2px solid white;
+.hdrright {
+    flex: 30%;
+    /* border: 2px solid white; */
     position: relative;
-} */
+}
 
 .fa-search {
     position: absolute;
-    top: 19px;
-    right: 300px;
+    top: 10px;
+    right: 350px;
     font-size: 10px;
     color: blue;
 }
 
 .search {
     position: absolute;
-    top: 19px;
-    right: 150px;
+    top: 10px;
+    right: 200px;
     font-size: 11px;
     border: 2px solid blue;
     height: 1.2rem;
@@ -66,44 +62,50 @@ header {
 
 .fa-user-circle {
     position: absolute;
-    right: 100px;
-    top: 15px;
+    top: 8px;
+    right: 120px;
     font-size: 40px;
 }
 
 .adm-name {
     position: absolute;
-    right: 30px;
-    top: 15px;
-
+    top: 7px;
+    right: 50px;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
-    line-height: 20px;
 }
 
 .role {
     position: absolute;
-    right: 65px;
-    top: 30px;
+    top: 24px;
+    right: 85px;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 11px;
-    line-height: 20px;
+    font-size: 10px;
 }
 
 /* HEADER TOP CSS END*/
 
+/* DOWN SECTION CSS BEGIN*/
+.down {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+/* DOWN SECTION CSS END*/
+
 /* SIDE BAR CSS BEGIN*/
 .side {
-    flex: 20%;
+    flex: 10%;
     border: 1px solid blue;
     position: relative;
-    background: whitesmoke;
-    /* flex-wrap: initial; */
+    /* background: whitesmoke; */
     /* height: 80vh; */
 }
 
@@ -116,16 +118,16 @@ header {
     font-weight: 400px;
 }
 
-i:hover {
+/* i:hover {
     padding-left: 2rem;
     border-radius: 10px;
     width: 200px;
     height: 2rem;
     background-color: blue;
-    /* align-content: center; */
-    /* justify-content: center; */
-    /* vertical-align: middle; */
-}
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+} */
 
 .fa-th-list {
     top: 1rem;
@@ -166,11 +168,6 @@ i:hover {
 /* SIDE BAR CSS END*/
 
 /* DOWN MAIN PAGE CSS BEGIN*/
-.down {
-    display: flex;
-    height: auto;
-}
-
 .main {
     flex: 70%;
     /* background: blue; */
@@ -181,18 +178,81 @@ i:hover {
 }
 
 .left {
-    flex: 25%;
+    flex: 30%;
     border: 1px solid red;
     text-align: center;
     /* flex-direction: column; */
 }
 
+.left-1, .left-2, .left-3, .left-4 {
+    display: flex;
+    position: relative;
+    text-align: left;
+    padding: .3rem;
+    background-color: white;
+    border: 1px solid green;
+}
+
+.pt1{
+    flex:50%;
+    flex-direction: row;
+    height: 7rem;
+    /* border: 1px solid green; */
+}
+
+.pt2{
+    flex:20%;
+    flex-direction: row;
+    /* border: 1px solid green; */
+}
+#desc {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#stack, #building, #cart {
+    position: absolute;
+    right: 1rem;
+    /* right: 20px; */
+ }
+
+ #counter{
+    position: absolute;
+    left: 1rem;
+    top: 3.5rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+ }
+
+ #graph-1 {
+    position: absolute;
+    font-size: 40px;
+    left: 5rem;
+    top: 3.5rem;
+    font-weight: bolder;
+    color: red;
+ }
+
+ #drpdwn-1 {
+    position: absolute;
+    right: 1.5rem;
+    top: 3.5rem;
+ }
+ 
+ #today {
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+ }
+
 .left>img {
     font-size: 2rem;
 }
 
+
 .right {
-    flex: 75%;
+    flex: 70%;
     border: 1px solid brown;
     text-align: center;
     /* flex-direction: row; */
@@ -220,8 +280,15 @@ i:hover {
 }
 
 @media (max-width: 425px) {
+   
+    .top {
+        position:sticky;
+
+    }
+
     .side {
-        display: none;
+        display: inline;
+        position:sticky;
     }
 
     .fa-search {
@@ -245,8 +312,6 @@ i:hover {
     .role {
         top: 1.5rem;
     }
-
-
 }
 
 /* MEDIA QUERY CSS END */
