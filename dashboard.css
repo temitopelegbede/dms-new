@@ -216,7 +216,7 @@ header {
     /* right: 20px; */
  }
 
- #counter{
+ #counter {
     position: absolute;
     left: 1rem;
     top: 3.5rem;
@@ -258,13 +258,71 @@ header {
     /* flex-direction: row; */
 }
 
-.top-right {
+.right-top {
     flex: 50%;
     border: 1px solid brown;
     flex-direction: row;
 }
+.top-1 {
+    border: 1px solid yellow;
+    /* flex: 50%; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    width: 10rem;
+}
+.pt1-top {
+    position: relative;
+}
+#counter-1 {
+    position: absolute;
+    left: 1rem;
+    top: .4rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+ }
 
-.down-right {
+#desc-1 {
+    font-size: 20px;
+    position: absolute;
+    left: 1rem;
+    top: 4rem;
+    font-size: 14px;
+    text-align: left;
+}
+
+#photo-1 {
+    position: absolute;
+    left: 1rem;
+    top: 6rem;
+    font-size: 14px;
+    width: 15%;
+    text-align: left;
+}
+
+ #graph-2 {
+    position: absolute;
+    left: 2rem;
+    top: 9rem;
+    width: 50%;
+    /* font-size: 10px; */
+    /* font-weight: bolder; */
+    color: red;
+ }
+ #desc-2 {
+    position: absolute;
+    left: 1rem;
+    top: 11rem;
+    font-size: 10px;
+    text-align: left;
+}
+
+.top-2 {
+    border: 1px solid yellow;
+}
+
+
+.right-down {
     flex: 50%;
     border: 1px solid brown;
     flex-direction: row;
@@ -281,15 +339,18 @@ header {
 
 @media (max-width: 425px) {
    
-    .top {
-        position:sticky;
-
+    header {
+        /* background-color: yellow; */
+        height: 13vh;
     }
+    /* .top {
+        background-color: yellow;
+    } */
 
-    .side {
+    /* .side {
         display: inline;
         position:sticky;
-    }
+    } */
 
     .fa-search {
         top: 2.7rem;
@@ -303,6 +364,7 @@ header {
 
     .fa-user-circle {
         top: .5rem;
+        right: 7rem;
     }
 
     .adm-name {
