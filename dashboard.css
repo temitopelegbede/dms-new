@@ -10,20 +10,21 @@
 .whole{
     display:flex;
     flex-direction: column;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     padding: 1% 1%;
+    /* height: 50vh; */
 }
 
 .top{
     flex-basis: 10%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .down{
     flex-basis: 90%;
     display: flex;
     flex-direction: row;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 .side-bar{
@@ -31,11 +32,25 @@
     border: 2px solid purple;
 }
 
-.container{
+.main {
     flex-basis: 80%;
     display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+.dash {
+    flex-basis: 10%;
+    margin-left: .5rem;
+    font-size: 24px;
+    font-weight: 700;    
+}
+
+.container{
+    flex-basis: 90%;
+    display: flex;
     flex-direction: row;
-    border: 2px solid chocolate;
+    /* border: 2px solid chocolate; */
 }
 
 .left-container{
@@ -49,12 +64,12 @@
     flex-basis: 75%;
     display: flex;
     flex-direction: column;
-    border: 2px solid cyan;
+    /* border: 2px solid cyan; */
 }
 
 .left {
     flex-basis: 25%;
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
 }
 
 .above{
@@ -66,12 +81,12 @@
 
 .above-left{
     flex-basis: 30%;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
 }
 
 .above-right{
     flex-basis: 70%;
-    border: 2px solid paleturquoise;
+    /* border: 2px solid paleturquoise; */
 }
 
 .below {
@@ -83,12 +98,12 @@
 
 .below-left{
     flex-basis: 40%;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
 }
 
 .below-right{
     flex-basis: 60%;
-    border: 2px solid paleturquoise;
+    /* border: 2px solid paleturquoise; */
 }
 
 
@@ -99,7 +114,7 @@ header {
     display: flex;
     padding: 20px;
     position: relative;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .hdrleft {
@@ -112,13 +127,13 @@ header {
 .logo {
     position: absolute;
     top: 15px;
-    margin-left: 1.5rem;
-    padding-left: 1rem;
+    margin-left: 1.rem;
+    /* padding-left: 1rem; */
 }
 
 .logo-text {
     text-transform: uppercase;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
     font-size: 24px;
     color: #030026;
     font-weight: 700;
@@ -144,7 +159,7 @@ header {
     top: 10px;
     right: 200px;
     font-size: 11px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 1.2rem;
 }
 
@@ -181,7 +196,7 @@ header {
 
 /* ------- Side Bar CSS Begins ------- */
 .side-bar {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: relative;
 }
 
@@ -238,13 +253,165 @@ header {
 }
 
 .fa-cog {
-    top: 33rem;
+    top: 25rem;
 }
 
 /* ------- Side Bar CSS Ends ------- */
 
+/* ------- Left-container CSS Starts  ------- */
 
+.left-1,
+.left-2,
+.left-3,
+.left-4 {
+    flex-basis: 25%;
+    position: relative;
+    background-color: white;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid green;
+}
 
+.padd{
+    margin-bottom: .9rem;
+    padding: .3rem;
+}
+
+#desc {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#stack,
+#building,
+#cart {
+    position: absolute;
+    right: 1rem;
+    /* right: 20px; */
+}
+
+#counter {
+    position: absolute;
+    left: 1rem;
+    top: 3.5rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+}
+
+#graph-1 {
+    position: absolute;
+    font-size: 40px;
+    left: 5rem;
+    top: 3.5rem;
+    font-weight: bolder;
+    color: red;
+}
+
+#drpdwn-1 {
+    position: absolute;
+    right: 1.5rem;
+    top: 5rem;
+}
+
+#today {
+    position: absolute;
+    right: 4rem;
+    top: 6rem;
+}
+
+.left>img {
+    font-size: 2rem;
+}
+
+/* ------- Left-container CSS Ends ------- */
+
+/* ------- Right-container CSS Begins ------- */
+
+.right-top, .right-down {
+    display: flex;
+    flex-basis: 50%;
+    position: relative;
+    text-align: left;
+    background-color: white;
+    /* border: 1px solid green; */
+}
+
+.top-1 {
+    display:flex;
+    flex-basis: 25%;
+    position: relative;
+    border: 2px solid white;
+    flex-direction: column;
+    height: 23.5rem;
+}
+
+.top-2 {
+    flex-basis: 75%;
+    border: 2px solid white;
+}
+
+#counter-1 {
+    position: absolute;
+    left: 1rem;
+    top: 9rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+}
+
+#desc-1 {
+    font-size: 20px;
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+
+#photo-1 {
+    position: absolute;
+    left: 1rem;
+    top: 6rem;
+    font-size: 14px;
+    width: 15%;
+    text-align: left;
+}
+
+#graph-2 {
+    position: absolute;
+    left: 7rem;
+    top: 8rem;
+    width: 50%;
+    /* font-size: 10px; */
+    /* font-weight: bolder; */
+    color: red;
+}
+
+#desc-2 {
+    position: absolute;
+    left: 1rem;
+    top: 11rem;
+    font-size: 10px;
+    text-align: left;
+}
+
+.down-1 {
+    flex-basis: 48%;
+    /* border: 1px solid yellow; */
+}
+.down-2 {
+    flex-basis: 52%;
+    /* border: 2px solid purple; */
+}
+
+/* .bar-chart {
+    height: 50%;
+} */
+
+/* ------- Right-container CSS Ends  ------- */
 
 
 
@@ -269,6 +436,10 @@ header {
         flex-basis: 100%;
     }
 
+    /* .down{
+        flex-basis: 100%;
+    } */
+
     .fa-search {
         top: 1.8rem;
         right: 18.5rem;
@@ -285,7 +456,7 @@ header {
 .side-bar{
     display: none;
 }
-    
+
 .container{
     flex-basis: 100%;
     display: flex;
@@ -299,16 +470,17 @@ header {
     border: 2px solid blue;
 }
 
+.left-1, .left-2, .left-3, .left-4 {
+    flex-basis: 50%;
+    display: flex;
+    border: 2px solid blue;
+}
+
 .right-container{
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     border: 2px solid cyan;
-}
-
-.left {
-    flex-basis: 25%;
-    border: 2px solid teal;
 }
 
 .above{
