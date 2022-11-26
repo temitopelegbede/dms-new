@@ -29,35 +29,6 @@ header {
   flex: 50%;
   padding: 20px;
 }
-.desc-container {
-  text-align: center;
-}
-
-.title-desc h3 {
-  /* padding: 0px 200px; */
-  font-weight: 100;
-  font-size: 40px;
-  color: #000000;
-  margin-bottom: 1rem;
-}
-.title-desc p {
-  /* padding: 0px 240px; */
-  font-weight: 400;
-  font-size: 14px;
-  color: #000000;
-  opacity: 0.4;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-.get-btn {
-  padding: 13px 23px;
-  background: #053582;
-  color: #ffffff;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-}
-
 .register-right {
   flex: 50%;
   padding: 20px;
@@ -79,10 +50,6 @@ header {
 .form-info {
   margin-bottom: 1rem;
 }
-.form-info p {
-  margin-top: 0.8rem;
-}
-
 input {
   width: 100%;
   padding: 10px;
@@ -94,29 +61,17 @@ input {
   color: #b5b5be;
   font-size: 14px;
 }
-.password-container {
-  position: relative;
-}
-.eye {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-.password {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #252525;
-  text-align: right;
-}
-a{
+/* a{
   text-decoration: none;
-}
-.reset {
-  display: flex;
-}
-.account-text{
-  margin-left: 2rem;
+} */
+.get-btn {
+  padding: 13px 23px;
+  background: #053582;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
