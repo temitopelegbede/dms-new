@@ -112,11 +112,12 @@ input {
 a{
   text-decoration: none;
 }
-.account {
-  margin-top: 2rem;
+.reset {
+  /* margin-top: 2rem; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  text-align: right;
 }
 .account-text{
   margin-left: 2rem;
