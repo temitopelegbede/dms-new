@@ -1,78 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery Management System</title>
-    <link rel="icon" href="./image/Logo.png" type="image/png" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./css/font-awesome.min.css" />
-  </head>
-  <body>
-    <div class="register-container">
-      <div class="register-wrapper">
-        <header>
-          <a href="./index.html"><img src="./image/Logo.png" alt="Delivery Management System Logo" />
-          <span class="logo-text">dms</span></a>
-        </header>
-        <div class="register">
-          <div class="register-left">
-            <div class="desc-container">
-              <img src="./image/bike.png" alt="a bike man" />
-              <div class="title-desc">
-                <h3>Let’s help you manage your riders and delivery systems.</h3>
-                <p>
-                  Every logistics company whether it’s a multi-national branding
-                  corporation or a regular local deserves the basic standard
-                  necessities in achieving a high service delivery
-                </p>
-              </div>
-              <a href="./login.html"><button class="get-btn">Get Started</button></a>
-            </div>
-          </div>
-          <div class="register-right">
-            <div class="form-container">
-              <progress class="progress-bar" value="65" max="100"></progress>
-              <div class="form-info">
-                <h3>Basic Information</h3>
-                <p>Enter the following information below</p>
-              </div>
-              <div class="form-wrapper">
-                <form>
-                  <div class="name-input">
-                    <input
-                      type="text"
-                      class="span"
-                      placeholder="Company name"
-                    />
-                    <input type="text" class="span" placeholder="Lastname" />
-                  </div>
-                  <input type="text" placeholder="Company Address" required />
-                  <input type="text" placeholder="Phone Number" required />
-                  <input
-                    type="email"
-                    placeholder="Company Email Address"
-                    required
-                  />
-                  <div class="password-container">
-                    <input type="password" placeholder="Password" required />
-                    <!-- <i class="fa fa-eye"></i> -->
-                    <img src="./image/eye.png" alt="eye icon" class="eye" />
-                  </div>
-                </form>
-              </div>
-              <p class="terms-condition">
-                By clicking "Next" you agree to our <a href="/term-condition">Terms of Service, Privacy Policy,</a> and to receive marketing communications from Envoy.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Management System</title>
+  <link rel="icon" href="./image/Logo.png" type="image/png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-wrapper">
+      <header>
+          <img src="./image/Logo.png" alt="Delivery Management System Logo" />
+          <a href="./index.html"><span class="logo-text">dms</span> </a>
+      </header>
+      <div class="register">
+        <div class="register-left">
+          <div class="desc-container">
+            <img src="./image/bike.png" alt="a bike man" />
+            <div class="title-desc">
+              <h3>Let’s help you manage your riders and delivery systems.</h3>
+              <p>
+                Every logistics company whether it’s a multi-national branding
+                corporation or a regular local deserves the basic standard
+                necessities in achieving a high service delivery
               </p>
-              <div class="account">
-                <p class="account-text">Got an account? Sign In </p>
-                <a href="./login.html"><button class="get-btn">  Register</button></a>
-              </div>
+            </div>
+            <a href="./login.html"><button class="get-btn">Get Started</button></a>
+          </div>
+        </div>
+        <div class="register-right">
+          <div class="form-container">
+            <progress class="progress-bar" value="65" max="100"></progress>
+            <div class="form-info">
+              <h3>Basic Information</h3>
+              <p>Enter the following information below</p>
+            </div>
+            <div class="form-wrapper">
+              <form id="form">
+                <div class="name-input">
+                  <input type="text" placeholder="Company name" id="cname" required />
+                  <input type="text" placeholder="Lastname" id="lname" required />
+                </div>
+                <input type="text" placeholder="Company Address" id="caddress" required />
+                <input type="text" placeholder="Phone Number" id="="phonenumber"" required />
+                <div class="email-wrapper">
+                  <input type="email" placeholder="Company Email Address" id="email" onkeyup="validateEmail()" required />
+                  <span id="text"></span>
+                </div>
+                <div class="password-container">
+                  <input type="password" placeholder="Password" id="password" required />
+                  <!-- <i class="fa fa-eye" onclick=hideAndShow()></i> -->
+                  <img onclick="showAndHide()" src="./image/eye-close.png" alt="eye icon" class="eye" id="eye" />
+                </div>
+              </form>
+            </div>
+            <p class="terms-condition">
+              By clicking "Next" you agree to our <a href="/term-condition">Terms of Service, Privacy Policy,</a> and to
+              receive marketing communications from Envoy.
+            </p>
+            <div class="account">
+              <p class="account-text">Got an account? <a href="./login.html"> Sign In </a> </p>
+              <a href="./login.html"><button class="get-btn"> Register</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="./app.js"></script>
+</body>
 </html>

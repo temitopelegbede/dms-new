@@ -24,13 +24,15 @@ header {
 }
 .register {
   display: flex;
+  justify-content: space-evenly;
 }
 .register-left {
   flex: 50%;
-  padding: 20px;
+  padding: 40px;
 }
 .desc-container {
   text-align: center;
+  margin: 0 auto;
 }
 
 .title-desc h3 {
@@ -41,8 +43,10 @@ header {
   margin-bottom: 1rem;
 }
 .title-desc p {
-  font-size: 16px;
-  color: black;
+  font-weight: 400;
+  font-size: 1.29rem;
+  color: #000000;
+  opacity: 0.4;
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -57,16 +61,15 @@ header {
 
 .register-right {
   flex: 50%;
-  padding: 20px;
+  padding: 40px;
 }
 .form-container {
   background: #ffffff;
   box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
   border-radius: 20px;
   padding: 30px;
-  width: 512px;
-  height: 600px;
-  margin: 0 auto;
+  height: auto;
+  /* margin: 0 auto; */
 }
 .progress-bar {
   width: 100%;
@@ -82,9 +85,6 @@ header {
   display: flex;
   gap: 0.5rem;
 }
-.span {
-  flex: 50%;
-}
 input {
   width: 100%;
   padding: 10px;
@@ -99,10 +99,20 @@ input {
 .password-container {
   position: relative;
 }
-.eye {
+
+/* .fa-eye {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
+} */
+.eye {
+  /* width: 15px; */
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
 }
 .terms-condition {
   font-weight: 400;
@@ -110,8 +120,13 @@ input {
   line-height: 1.5;
   color: #252525;
 }
-a{
+a {
   text-decoration: none;
+  /* color: inherit; */
+}
+.fpassword{
+  display: block;
+  text-align: right;
 }
 .account {
   margin-top: 2rem;
@@ -119,25 +134,44 @@ a{
   justify-content: space-between;
   align-items: center;
 }
-.account-text{
+.account-text {
   margin-left: 2rem;
 }
+@media (max-width: 1040px) {
+  .title-desc h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .register {
+    flex-direction: column;
+  }
+  .name-input {
+    flex-direction: column;
+  }
+}
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .register {
     flex-direction: column;
   }
 }
 @media (max-width: 540px) {
-  .form-container{
+  .form-container {
     width: auto;
   }
-}
+} */
 @media (max-width: 400px) {
-  .account{
+  .account {
     flex-direction: column;
   }
-  .account-text{
+  .account-text {
     margin-bottom: 1rem;
+  }
+  .register-right {
+    padding: 10px;
+  }
+  p.terms-condition{
+    font-size: 0.8rem;
   }
 }

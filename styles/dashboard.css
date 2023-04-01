@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.sidebar-container {
+  flex: 20%;
+  background: #ffffff;
+  height: 100vh;
+}
+.sidebar-content {
+  padding: 1rem;
+}
+.sidebar-content li {
+  list-style: none;
+  margin-bottom: 1.3rem;
+}
+.sidebar-content ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+.icontext {
+  font-size: 1.2rem;
+  color: #252525;
+  opacity: 0.4;
+}
+.image-wrapper img {
+  padding: 1rem;
+}
+.main-container {
+  flex: 80%;
+  background: #e5e5e5;
+  height: 100vh;
+}
+header {
+  background: #fff;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+.search-wrapper img {
+  width: 18px;
+  height: 18px;
+  color: #231f20;
+}
+.search-input {
+  border: none;
+  outline: 0;
+}
+::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.4;
+}
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+}
+.role {
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.dashboard-analysis {
+  padding: 2rem;
+}
+
+
+/*=========================================*/
+.main {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.dash {
+  flex-basis: 10%;
+  margin-left: .5rem;
+  font-size: 24px;
+  font-weight: 700;    
+}
+
+.container{
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid chocolate; */
+}
+
+.left-container{
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+}
+
+.right-container{
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid cyan; */
+}
+
+.left {
+  flex-basis: 25%;
+  /* border: 2px solid teal; */
+}
+
+.above{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid teal;
+}
+
+.above-left{
+  flex-basis: 30%;
+  /* border: 2px solid yellowgreen; */
+}
+
+.above-right{
+  flex-basis: 70%;
+  /* border: 2px solid paleturquoise; */
+}
+
+.below {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid fuchsia;
+}
+
+.below-left{
+  flex-basis: 40%;
+  /* border: 2px solid yellowgreen; */
+}
+
+.below-right{
+  flex-basis: 60%;
+  /* border: 2px solid paleturquoise; */
+}
+
+
+/* All Flex & Flex-Basis Breakdown Stops*/
+
+
+
+/*========================================*/
+
+/* ------- Left-container CSS Starts  ------- */
+
+.left-1,
+.left-2,
+.left-3,
+.left-4 {
+    flex-basis: 25%;
+    position: relative;
+    background-color: white;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.padd{
+    margin-bottom: .9rem;
+    padding: .3rem;
+}
+
+#desc {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#stack,
+#building,
+#cart {
+    position: absolute;
+    right: 1rem;
+    /* right: 20px; */
+}
+
+#counter {
+    position: absolute;
+    left: 1rem;
+    top: 3.5rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+}
+
+#graph-1 {
+    position: absolute;
+    font-size: 40px;
+    left: 5rem;
+    top: 3.5rem;
+    font-weight: bolder;
+    color: red;
+}
+
+#drpdwn-1 {
+    position: absolute;
+    right: 1.5rem;
+    top: 5rem;
+}
+
+#today {
+    position: absolute;
+    right: 4rem;
+    top: 6rem;
+}
+
+.left>img {
+    font-size: 2rem;
+}
+
+/* ------- Left-container CSS Ends ------- */
+
+/* ------- Right-container CSS Begins ------- */
+
+.right-top, .right-down {
+    display: flex;
+    flex-basis: 50%;
+    position: relative;
+    text-align: left;
+    background-color: white;
+    /* border: 1px solid green; */
+}
+
+.top-1 {
+    display:flex;
+    flex-basis: 25%;
+    position: relative;
+    border: 2px solid white;
+    flex-direction: column;
+    height: 23.5rem;
+}
+
+.top-2 {
+    flex-basis: 75%;
+    border: 2px solid white;
+}
+
+#counter-1 {
+    position: absolute;
+    left: 1rem;
+    top: 9rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: red;
+}
+
+#desc-1 {
+    font-size: 20px;
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+
+#photo-1 {
+    position: absolute;
+    left: 1rem;
+    top: 6rem;
+    font-size: 14px;
+    width: 15%;
+    text-align: left;
+}
+
+#graph-2 {
+    position: absolute;
+    left: 7rem;
+    top: 8rem;
+    width: 50%;
+    /* font-size: 10px; */
+    /* font-weight: bolder; */
+    color: red;
+}
+
+#desc-2 {
+    position: absolute;
+    left: 1rem;
+    top: 11rem;
+    font-size: 10px;
+    text-align: left;
+}
+
+.down-1 {
+    flex-basis: 48%;
+    /* border: 1px solid yellow; */
+}
+.down-2 {
+    flex-basis: 52%;
+    /* border: 2px solid purple; */
+}
+
+/* .bar-chart {
+    height: 50%;
+} */
+
+/* ------- Right-container CSS Ends  ------- */
+
+@media (max-width: 768px) {
+  .icontext {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .icontext {
+    display: none;
+  }
+}

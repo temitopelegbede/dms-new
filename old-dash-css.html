@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Raleway:wght@100;200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* All Flex & Flex-Basis Breakdown Starts*/
+.whole{
+    display:flex;
+    flex-direction: column;
+    /* background-color: greenyellow; */
+    padding: 1% 1%;
+    /* height: 50vh; */
+}
+
+.top{
+    flex-basis: 10%;
+    /* border: 2px solid green; */
+}
+
+.down{
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid purple; */
+}
+
+.side-bar{
+    flex-basis: 20%;
+    border: 2px solid purple;
+}
+
+
+
+/* TOP-Header CSS Starts */
+header {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    /* border: 2px solid blue; */
+}
+
+.hdrleft {
+    display:flex;
+    flex-basis: 60%;
+    cursor: pointer;
+    /* background-color: red;    */
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    margin-left: 1.rem;
+    /* padding-left: 1rem; */
+}
+
+.logo-text {
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+    font-size: 24px;
+    color: #030026;
+    font-weight: 700;
+}
+
+.hdrright {
+    flex-basis: 40%;
+    position: relative;
+    /* background-color: green; */
+    /* border: 2px solid white; */
+}
+
+.fa-search {
+    position: absolute;
+    top: 10px;
+    right: 350px;
+    font-size: 10px;
+    color: blue;
+}
+
+.search {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 11px;
+    /* border: 2px solid blue; */
+    height: 1.2rem;
+}
+
+.fa-user-circle {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    font-size: 40px;
+}
+
+.adm-name {
+    position: absolute;
+    top: 7px;
+    right: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.role {
+    position: absolute;
+    top: 24px;
+    right: 85px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+
+
+/* MEDIA QUERY CSS BEGIN */
+@media (max-width: 768px) {
+    .side-bar{
+        display: none;
+    }
+
+    .container{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .side-bar{
+        display: none;
+    }
+
+    .container{
+        flex-basis: 100%;
+    }
+
+    /* .down{
+        flex-basis: 100%;
+    } */
+
+    .fa-search {
+        top: 1.8rem;
+        right: 18.5rem;
+    }
+    
+    .search {
+        top: 1.8rem;
+        right: 9rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+.side-bar{
+    display: none;
+}
+
+.container{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid chocolate;
+}
+
+.left-container{
+    flex-basis: 50%;
+    display: flex;
+    border: 2px solid blue;
+}
+
+.left-1, .left-2, .left-3, .left-4 {
+    flex-basis: 50%;
+    display: flex;
+    border: 2px solid blue;
+}
+
+.right-container{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid cyan;
+}
+
+.above{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid teal;
+}
+
+.above-left{
+    flex-basis: 50%;
+    border: 2px solid yellowgreen;
+}
+
+.above-right{
+    flex-basis: 50%;
+    border: 2px solid paleturquoise;
+}
+
+.below {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    order: 2px solid fuchsia;
+}
+
+.below-left{
+    flex-basis: 25%;
+    border: 2px solid yellowgreen;
+}
+
+.below-right{
+    flex-basis: 25%;
+    border: 2px solid paleturquoise;
+}
+
+.fa-search {
+    top: 1.8rem;
+    right: 9.5rem;
+}
+
+.search {
+    top: 1.8rem;
+    right: 0.05rem;
+}
+
+.fa-user-circle {
+    top: .1rem;
+    right: 7.5rem;
+}
+
+.adm-name {
+    top: .05rem;
+}
+
+.role {
+    top: .9rem;
+}
+}
